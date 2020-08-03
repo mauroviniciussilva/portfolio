@@ -2,10 +2,11 @@
   <section>
     <div class="modal-card" style="width: auto">
       <section class="modal-card-body has-background-dark">
-        <b-field :label="$t('contact.name')">
+        <b-field :label="$t('contact.name')" label-for="name">
           <b-input
             custom-class="dark-input"
             name="name"
+            id="name"
             v-model="form.name"
             type="text"
             :placeholder="$t('contact.namePlaceHolder')"
@@ -13,9 +14,10 @@
             :disabled="isLoading"
           ></b-input>
         </b-field>
-        <b-field :label="$t('contact.email')">
+        <b-field :label="$t('contact.email')" label-for="email">
           <b-input
             name="email"
+            id="email"
             custom-class="dark-input"
             v-model="form.email"
             type="email"
@@ -24,9 +26,10 @@
             :disabled="isLoading"
           ></b-input>
         </b-field>
-        <b-field :label="$t('contact.phone')">
+        <b-field :label="$t('contact.phone')" label-for="phone">
           <vue-phone-number-input
             name="phone"
+            id="phone"
             v-model="form.phone"
             :translations="translations"
             color="#2f2f30"
@@ -38,9 +41,10 @@
             :disabled="isLoading"
           />
         </b-field>
-        <b-field :label="$t('contact.subject')">
+        <b-field :label="$t('contact.subject')" label-for="subject">
           <b-input
             name="subject"
+            id="subject"
             custom-class="dark-input"
             v-model="form.subject"
             type="text"
@@ -48,9 +52,10 @@
             :disabled="isLoading"
           ></b-input>
         </b-field>
-        <b-field :label="$t('contact.message')">
+        <b-field :label="$t('contact.message')" label-for="message">
           <b-input
             name="message"
+            id="message"
             custom-class="dark-input"
             v-model="form.message"
             type="textarea"
