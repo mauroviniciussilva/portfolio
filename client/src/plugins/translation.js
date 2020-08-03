@@ -36,8 +36,7 @@ const Trans = {
     return locale;
   },
   routeMiddleware(to, from, next) {
-    const locale = to.params.locale;
-    console.log(locale);
+    const locale = to.params.locale
     if (!Trans.isLocaleSupported(locale))
       return next(Trans.getUserSupportedLocale());
     return Trans.changeLocale(locale).then(() => next());

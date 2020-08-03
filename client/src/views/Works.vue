@@ -1,14 +1,6 @@
 <template>
   <div class="full-width">
-    <div class="header-page fade-in">
-      <div
-        v-html="require('!html-loader!./../assets/Work.svg')"
-        class="grow-hover"
-      ></div>
-      <div style="position: absolute;" class="full-width full-height">
-        <h1 class="title-overlay" style="opacity: 0.5">Mauro Oliveira</h1>
-      </div>
-    </div>
+    <HeaderPage svg-name="Work" />
 
     <section class="section" style="max-width: 100vw;">
       <div v-for="(work, index) in works" :key="index">
@@ -45,9 +37,10 @@
         </section>
       </div>
     </section>
+
     <div
       class="columns is-vcentered is-centered has-background-primary is-mobile is-multiline"
-      style="height: 110vh; max-width: 100vw; padding: 2rem; margin: 0;margin-top: 20vh;padding-top: 10vh;"
+      style="height: 100vh;margin: 0;padding-top: 10vh;"
     >
       <div class="column is-full-mobile is-9-tablet">
         <h2 class="title is-size-1 is-size-3-mobile has-text-dark">
@@ -61,7 +54,7 @@
           name="github"
           :aria-label="$t('work.goToGitHub')"
           :title="$t('work.goToGitHub')"
-          style="margin-top: 10px"
+          style="margin-top: 15px"
           href="https://github.com/mauroviniciussilva"
           target="_blank"
         >
@@ -79,6 +72,7 @@
 
 <script>
 import Carousel from "@/components/Carousel";
+import HeaderPage from "@/components/HeaderPage";
 import { works } from "@/json/works.json";
 
 export default {
@@ -88,6 +82,7 @@ export default {
     };
   },
   components: {
+    HeaderPage,
     Carousel
   }
 };

@@ -13,7 +13,6 @@
             :disabled="isLoading"
           ></b-input>
         </b-field>
-
         <b-field :label="$t('contact.email')">
           <b-input
             name="email"
@@ -25,7 +24,6 @@
             :disabled="isLoading"
           ></b-input>
         </b-field>
-
         <b-field :label="$t('contact.phone')">
           <vue-phone-number-input
             name="phone"
@@ -40,7 +38,6 @@
             :disabled="isLoading"
           />
         </b-field>
-
         <b-field :label="$t('contact.subject')">
           <b-input
             name="subject"
@@ -51,7 +48,6 @@
             :disabled="isLoading"
           ></b-input>
         </b-field>
-
         <b-field :label="$t('contact.message')">
           <b-input
             name="message"
@@ -63,7 +59,6 @@
             :disabled="isLoading"
           ></b-input>
         </b-field>
-
         <b-button
           expanded
           type="is-primary"
@@ -136,7 +131,7 @@ export default {
         .catch(e => {
           this.$buefy.snackbar.open({
             duration: 3000,
-            message: e.data.message || "Message sent successfully!",
+            message: e.data.message || "I'm sorry, your message couldn't be sent. Try again in a few moments.",
             type: "is-danger",
             position: "is-bottom-right",
             actionText: "Ok",

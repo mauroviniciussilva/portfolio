@@ -1,27 +1,11 @@
 <template>
   <div class="works">
-    <div class="header-page fade-in">
-      <div
-        v-html="require('!html-loader!./../assets/Skills.svg')"
-        class="grow-hover"
-        style="z-index:2"
-      ></div>
-      <div style="position: absolute;" class="full-width full-height">
-        <h1 class="title-overlay">Mauro Oliveira</h1>
-      </div>
-    </div>
+    <HeaderPage svg-name="Skills" :hide-title-mobile="true" />
 
-    <div
-      class="columns is-vcentered is-centered has-background-primary is-mobile"
-      style="height: 110vh; max-width: 100vw; padding: 2rem; margin: 0;margin-top: 10vh;padding-top: 10vh;padding-bottom: 10vh"
-    >
-      <div class="column is-full-mobile is-9-tablet">
-        <h2 class="title is-1 has-text-dark">{{ $t("skills.stack") }}</h2>
-        <p class="is-size-4 is-size-5-mobile has-text-white">
-          {{ $t("skills.stackDescription") }}
-        </p>
-      </div>
-    </div>
+    <SectionTextPrimary
+      title="skills.stack"
+      description="skills.stackDescription"
+    />
 
     <div
       class="columns is-vcentered is-centered is-mobile"
@@ -31,126 +15,33 @@
         <h2 class="title is-1 has-text-primary">{{ $t("navBar.skills") }}</h2>
         <div class="columns">
           <div class="column">
-            <div class="columns is-vcentered is-centered is-mobile">
-              <div class="column is-8">
-                <b-progress type="is-primary" :value="100"></b-progress>
-              </div>
-              <div class="column is-4-mobile is-2-tablet has-text-left">
-                <p class="is-size-5 has-text-white">JavaScript</p>
-              </div>
-            </div>
-            <div class="columns is-vcentered is-centered is-mobile">
-              <div class="column is-8">
-                <b-progress type="is-primary" :value="100"></b-progress>
-              </div>
-              <div class="column is-4-mobile is-2-tablet has-text-left">
-                <p class="is-size-5 has-text-white">VueJS</p>
-              </div>
-            </div>
-            <div class="columns is-vcentered is-centered is-mobile">
-              <div class="column is-8">
-                <b-progress type="is-primary" :value="98"></b-progress>
-              </div>
-              <div class="column is-4-mobile is-2-tablet has-text-left">
-                <p class="is-size-5 has-text-white">HTML</p>
-              </div>
-            </div>
-            <div class="columns is-vcentered is-centered is-mobile">
-              <div class="column is-8">
-                <b-progress type="is-primary" :value="97"></b-progress>
-              </div>
-              <div class="column is-4-mobile is-2-tablet has-text-left">
-                <p class="is-size-5 has-text-white">CSS</p>
-              </div>
-            </div>
-            <div class="columns is-vcentered is-centered is-mobile">
-              <div class="column is-8">
-                <b-progress type="is-primary" :value="97"></b-progress>
-              </div>
-              <div class="column is-4-mobile is-2-tablet has-text-left">
-                <p class="is-size-5 has-text-white">SCSS</p>
-              </div>
-            </div>
-            <div class="columns is-vcentered is-centered is-mobile">
-              <div class="column is-8">
-                <b-progress type="is-primary" :value="95"></b-progress>
-              </div>
-              <div class="column is-4-mobile is-2-tablet has-text-left">
-                <p class="is-size-5 has-text-white">AngularJS</p>
-              </div>
-            </div>
+            <Skill :percentage="100" name="JavaScript" />
+            <Skill :percentage="100" name="VueJS" />
+            <Skill :percentage="90" name="HTML" />
+            <Skill :percentage="90" name="CSS" />
+            <Skill :percentage="90" name="SCSS" />
+            <Skill :percentage="90" name="AngularJS" />
           </div>
           <div class="column">
-            <div class="columns is-vcentered is-centered is-mobile">
-              <div class="column is-8">
-                <b-progress type="is-primary" :value="93"></b-progress>
-              </div>
-              <div class="column is-4-mobile is-2-tablet has-text-left">
-                <p class="is-size-5 has-text-white">Node</p>
-              </div>
-            </div>
-            <div class="columns is-vcentered is-centered is-mobile">
-              <div class="column is-8">
-                <b-progress type="is-primary" :value="93"></b-progress>
-              </div>
-              <div class="column is-4-mobile is-2-tablet has-text-left">
-                <p class="is-size-5 has-text-white">C#</p>
-              </div>
-            </div>
-            <div class="columns is-vcentered is-centered is-mobile">
-              <div class="column is-8">
-                <b-progress type="is-primary" :value="85"></b-progress>
-              </div>
-              <div class="column is-4-mobile is-2-tablet has-text-left">
-                <p class="is-size-5 has-text-white">MySQL</p>
-              </div>
-            </div>
-            <div class="columns is-vcentered is-centered is-mobile">
-              <div class="column is-8">
-                <b-progress type="is-primary" :value="85"></b-progress>
-              </div>
-              <div class="column is-4-mobile is-2-tablet has-text-left">
-                <p class="is-size-5 has-text-white">SQL</p>
-              </div>
-            </div>
-            <div class="columns is-vcentered is-centered is-mobile">
-              <div class="column is-8">
-                <b-progress type="is-primary" :value="83"></b-progress>
-              </div>
-              <div class="column is-4-mobile is-2-tablet has-text-left">
-                <p class="is-size-5 has-text-white">Angular</p>
-              </div>
-            </div>
-            <div class="columns is-vcentered is-centered is-mobile">
-              <div class="column is-8">
-                <b-progress type="is-primary" :value="75"></b-progress>
-              </div>
-              <div class="column is-4-mobile is-2-tablet has-text-left">
-                <p class="is-size-5 has-text-white">React</p>
-              </div>
-            </div>
+            <Skill :percentage="90" name="Node" />
+            <Skill :percentage="90" name="C#" />
+            <Skill :percentage="85" name="MySQL" />
+            <Skill :percentage="85" name="SQL" />
+            <Skill :percentage="80" name="Angular" />
+            <Skill :percentage="60" name="React" />
           </div>
         </div>
       </div>
     </div>
 
-    <div
-      class="columns is-vcentered is-centered has-background-primary is-mobile is-multiline"
-      style="height: 110vh; max-width: 100vw; padding: 2rem; margin: 0;margin-top: 20vh;padding-top: 10vh;padding-bottom: 10vh"
-    >
-      <div class="column is-full-mobile is-9-tablet">
-        <h2 class="title is-size-1 is-size-2-mobile has-text-dark">
-          {{ $t("skills.testingAndDocumentation") }}
-        </h2>
-        <p class="is-size-4 is-size-5-mobile has-text-white">
-          {{ $t("skills.testingAndDocumentationDescription") }}
-        </p>
-      </div>
-    </div>
+    <SectionTextPrimary
+      title="skills.testingAndDocumentation"
+      description="skills.testingAndDocumentationDescription"
+    />
 
     <div
       class="columns is-vcentered is-centered is-mobile"
-      style="height: 100vh; max-width: 100vw; padding: 2rem; margin: 0;margin-top: 10vh;"
+      style="height: 100vh; padding: 2rem; margin: 0;margin-top: 10vh;"
     >
       <div class="column">
         <h2 class="title is-1 has-text-primary">
@@ -176,9 +67,18 @@
 </template>
 
 <script>
+import HeaderPage from "@/components/HeaderPage";
+import Skill from "@/components/Skill";
+import SectionTextPrimary from "@/components/SectionTextPrimary";
 import ModalContact from "@/components/ModalContact";
 
 export default {
+  name: "Skills",
+  components: {
+    HeaderPage,
+    SectionTextPrimary,
+    Skill
+  },
   methods: {
     sendEmail() {
       this.$buefy.modal.open({
