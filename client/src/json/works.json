@@ -1,0 +1,153 @@
+{
+    "works": [{
+        "name": "Booking",
+        "description": "listWorks.booking.description",
+        "list": [
+            {
+            "url": "/img/booking/login.webp",
+            "title": "listWorks.loginScreen"
+            },
+            {
+            "url": "/img/booking/apartamentos.webp",
+            "title": "listWorks.booking.apartmentsList"
+            },
+            {
+            "url": "/img/booking/apartamentoEdit.webp",
+            "title": "listWorks.booking.apartmentsEdit"
+            },
+            {
+            "url": "/img/booking/hospedes.webp",
+            "title": "listWorks.booking.guestsList"
+            },
+            {
+            "url": "/img/booking/hospedeEdit.webp",
+            "title": "listWorks.booking.guestsEdit"
+            },
+            {
+            "url": "/img/booking/reservas.webp",
+            "title": "listWorks.booking.bookingList"
+            },
+            {
+            "url": "/img/booking/reservaEdit.webp",
+            "title": "listWorks.booking.bookingEdit"
+            },
+            {
+            "url": "/img/booking/usuarios.webp",
+            "title": "listWorks.booking.usersList"
+            },
+            {
+            "url": "/img/booking/caixa.webp",
+            "title": "listWorks.booking.cashierScreen"
+            },
+            {
+            "url": "/img/booking/tarifas.webp",
+            "title": "listWorks.booking.faresScreen"
+            }
+        ]
+    },
+    {
+        "name": "Confispe",
+        "description": "listWorks.confispe.description",
+        "link": "http://confispecontabilidade.com.br/",
+        "linkAlias": "confispecontabilidade.com.br",
+        "list": [
+            {
+            "url": "/img/confispe/home.webp",
+            "title": "listWorks.homePage"
+            },
+            {
+            "url": "/img/confispe/mudarContador.webp",
+            "title": "listWorks.confispe.changeCounterPage"
+            },
+            {
+            "url": "/img/confispe/abrirEmpresa.webp",
+            "title": "listWorks.confispe.openCompanyPage"
+            },
+            {
+            "url": "/img/confispe/planos.webp",
+            "title": "listWorks.confispe.plansPage"
+            },
+            {
+            "url": "/img/confispe/blog.webp",
+            "title": "listWorks.blog"
+            }
+        ]
+    },
+    {
+        "name": "Deblogger",
+        "description": "listWorks.deblogger.description",
+        "link": "http://deblogger.com.br/",
+        "linkAlias": "deblogger.com.br",
+        "list": [
+            {
+                "url": "/img/deblogger/home.webp",
+                "title": "listWorks.homePage"
+            },
+            {
+                "url": "/img/deblogger/apendice.webp",
+                "title": "listWorks.homePage"
+            },
+            {
+                "url": "/img/deblogger/tutoriais.webp",
+                "title": "listWorks.deblogger.tutorialsPage"
+            },
+            {
+                "url": "/img/deblogger/roadMap.webp",
+                "title": "listWorks.deblogger.roadMapPage"
+            },
+            
+            {
+                "url": "/img/deblogger/categorias.webp",
+                "title": "listWorks.deblogger.blogCategoriesPage"
+            }
+        ]
+    },
+    {
+        "name": "Olímpia Parques",
+        "description": "listWorks.olimpiaParques.description",
+        "list": [
+            {
+                "url": "/img/olimpiaParques/home.webp",
+                "title": "listWorks.homePage"
+            },
+            {
+                "url": "/img/olimpiaParques/home2.webp",
+                "title": "listWorks.homePage"
+            },
+            {
+                "url": "/img/olimpiaParques/carrinho.webp",
+                "title": "listWorks.olimpiaParques.cartPage"
+            },
+            {
+                "url": "/img/olimpiaParques/finalizarCompra.webp",
+                "title": "listWorks.olimpiaParques.checkoutPage"
+            },
+            {
+                "url": "/img/olimpiaParques/notFound.webp",
+                "title": "listWorks.pageNotFount"
+            }
+        ]
+    },
+    {
+        "name": "CSA São Paulo",
+        "description": "listWorks.csaSaoPaulo.description",
+        "list": [
+            {
+                "url": "/img/csaSaoPaulo/home.webp",
+                "title": "listWorks.homePage"
+            },
+            {
+                "url": "/img/csaSaoPaulo/mapa.webp",
+                "title": "listWorks.csaSaoPaulo.mapsPage"
+            },
+            {
+                "url": "/img/csaSaoPaulo/calculadoraTempoLimpo.webp",
+                "title": "listWorks.csaSaoPaulo.cleanTimeCalculatorPage"
+            },
+            {
+                "url": "/img/csaSaoPaulo/documentos.webp",
+                "title": "listWorks.csaSaoPaulo.documentsPage"
+            }
+        ]
+    }]
+}

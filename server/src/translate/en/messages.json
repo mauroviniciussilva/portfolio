@@ -1,0 +1,17 @@
+{
+    "response.json_bad_request": "Bad Request",
+    "response.json_not_found": "Not Found",
+    "response.json_ok": "Successful Request",
+    "response.json_server_error": "Internal Server Error",
+    "response.json_unauthorized": "Unauthorized",
+    "response.emailSent": "Email sent",
+    "response.messageSent": "Message sent successfully! Soon I will return your contact.",
+    "response.emailNotSent": "Contact request failed",
+    "email.contact.subjectText": "Contact request",
+    "email.contact.title": "A customer made a contact request!",
+    "email.contact.name": "Name",
+    "email.contact.phone": "Phone",
+    "email.contact.email": "Email",
+    "email.contact.subject": "Subject",
+    "email.contact.message": "Message"
+}

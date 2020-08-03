@@ -1,0 +1,178 @@
+// Import Bulma's core
+@import "~bulma/sass/utilities/_all";
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+
+$primary: #71bc78;
+$primary-invert: findColorInvert($primary);
+$dark: #18191a;
+$dark-invert: findColorInvert($dark);
+
+$colors: (
+  "white": (
+    $white,
+    $black,
+  ),
+  "black": (
+    $black,
+    $white,
+  ),
+  "light": (
+    $light,
+    $light-invert,
+  ),
+  "dark": (
+    $dark,
+    $dark-invert,
+  ),
+  "primary": (
+    $primary,
+    $primary-invert,
+  ),
+  "info": (
+    $info,
+    $info-invert,
+  ),
+  "success": (
+    $success,
+    $success-invert,
+  ),
+  "warning": (
+    $warning,
+    $warning-invert,
+  ),
+  "danger": (
+    $danger,
+    $danger-invert,
+  ),
+);
+
+// Links
+$link: $primary;
+$link-invert: $primary-invert;
+$link-focus-border: $primary;
+
+// Import Bulma and Buefy styles
+@import "~bulma";
+@import "~buefy/src/scss/buefy";
+@import "./animate.scss";
+
+
+/* Scroll */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $primary; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #578e5c ; 
+}
+
+/* Main styles */
+* {
+  font-family: "Raleway", sans-serif !important;
+}
+
+html,
+body {
+  height: calc(100% - 70px);
+  background-color: $dark;
+  color: $white;
+}
+
+.body-padding {
+  padding: 20px;
+}
+
+.main-content {
+  margin-top: 70px;
+}
+
+.grow-hover {
+  transition: 0.3s;
+}
+
+.grow-hover:hover {
+  transform: scale(1.04);
+}
+
+.full-width {
+  width: 100% !important;
+}
+
+.full-height {
+  height: 100% !important;
+}
+
+.dark-input {
+  background-color: #18191a;
+  border-color: #2f2f30;
+  border-radius: 4px;
+  color: #fff;
+}
+
+.dark-input::placeholder {
+  color: #a0a0a0;
+}
+
+.dark-input.input[disabled], .dark-input.textarea[disabled] {
+  background-color: #18191a;
+  border-color: #323232;
+  box-shadow: none;
+  color: #8e8d8d;
+}
+
+.title-overlay {
+  opacity: 0.5;
+  font-weight: bolder;
+  overflow: hidden;
+  height: 100%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  text-shadow: 5px 4px 6px #000000;
+}
+
+@media screen and (max-width: 1111px) {
+  .title-overlay {
+    font-size: 25vw;
+    margin-top: 5vh;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .title-overlay {
+    font-size: 25vw;
+  }
+}
+
+@media screen and (min-width: 1112px) {
+  .title-overlay {
+    font-size: 18vw;
+    margin-top: 5vh;
+  }
+}
+
+.header-page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+svg {
+  max-height: 75vh;
+  max-width: 90vw;
+}
+
+/* End of main styles */

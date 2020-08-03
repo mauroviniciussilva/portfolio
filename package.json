@@ -1,0 +1,30 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio Backend",
+  "main": "index.js",
+  "scripts": {
+    "prestart": "npm i",
+    "start": "node server/index.js",
+    "dev": "nodemon server/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mauroviniciussilva/portfolio.git"
+  },
+  "author": "Mauro Oliveira",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mauroviniciussilva/portfolio/issues"
+  },
+  "homepage": "https://github.com/mauroviniciussilva/portfolio#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "nodemailer": "^6.4.11"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}

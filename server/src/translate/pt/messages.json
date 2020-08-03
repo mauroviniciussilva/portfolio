@@ -1,0 +1,17 @@
+{
+    "response.json_bad_request": "Algo deu errado",
+    "response.json_not_found": "Não encontrado",
+    "response.json_ok": "Requisição bem sucedida",
+    "response.json_server_error": "Erro do Servidor Interno",
+    "response.json_unauthorized": "Não Autorizado",
+    "response.emailSent": "Email enviado",
+    "response.messageSent": "Mensagem enviada com sucesso! Em breve eu retornarei seu contato.",
+    "response.emailNotSent": "Falha na solicitação de contato",
+    "email.contact.subjectText": "Solicitação de contato",
+    "email.contact.title": "Um cliente fez uma solicitação de contato!",
+    "email.contact.name": "Nome",
+    "email.contact.phone": "Telefone",
+    "email.contact.email": "Email",
+    "email.contact.subject": "Assunto",
+    "email.contact.message": "Mensagem"
+}

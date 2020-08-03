@@ -1,0 +1,91 @@
+{
+  "navBar": {
+    "home": "Home",
+    "skills": "Skills",
+    "works": "Works"
+  },
+  "homePage": {
+    "hello": "Hello!",
+    "whoAmI": "My name is Mauro, I'm a developer with knowledge in .NET Core and .NET Framework, currently working with back-end and front-end, mainly with JavaScript frameworks such as Angular and VueJS.",
+    "responsiveness": "Responsiveness",
+    "responsivenessDescrition": "I seek to build responsive websites that provide a pleasant experience on all devices.",
+    "fastAndSeoFriendly": "Fast and SEO Friendly",
+    "fastAndSeoFriendlyDescription": "And as the user experience is always important, system optimization is part of the process, resulting in a fast and optimized website for search engines.",
+    "communication": "Communication",
+    "communicationDescription": "Communication is part of the development process, and the delivery is continuous. Be it a small website or a complex system, you will actively participate in the entire development."
+  },
+  "contact": {
+    "contactMe": "Contact Me",
+    "name": "Name",
+    "namePlaceHolder": "Your name",
+    "email": "Email",
+    "emailPlaceHolder": "Your email",
+    "phone": "Phone",
+    "subject": "Subject",
+    "subjectPlaceHolder": "The e-mail subject",
+    "message": "Message",
+    "messagePlaceHolder": "Your message",
+    "countryCode": "Country Code",
+    "chooseACountry": "Choose a country",    
+    "phoneNumber": "Phone Number",
+    "example": "Example",
+    "invalidMessage": "Fill out all the fields",
+    "send": "Send"
+  },
+  "skills": {
+    "stack": "Stack",
+    "stackDescription": "Finding the right technologies for a project can be complicated. Should I make the site in HTML, CSS and JavaScript pure? Use some Javascript framework? Use Wordpress? What language will I use for the backend? PHP? Node? .NET? And in the database? Well, to choose the right technologies a number of factors have to be assessed. But if you don't have any preference, I can make the choice for you, and explain why.",
+    "testingAndDocumentation": "Testing and Documentation",
+    "testingAndDocumentationDescription": "For most customers, testing and documentation may not seem important, but well-documented software with automated testing makes all the difference. Technologies like Swagger, Postman and Nightwatch can cover some of these requirements.",
+    "questions": "Questions"
+  },
+  "work": {
+    "paused": "Paused",
+    "otherWorks": "Other Works",
+    "otherWorksDescription": "Some works I can't post here, for privacy reasons of the contracting company, or other reasons. There are still works that I did that don't have a graphical interface, such as APIs and automated tests. If you're interested in seeing my code, including the code for this portfolio, access my profile on GitHub, there you'll find some of my projects publicly.",
+    "goToGitHub": "Go to GitHub"
+  },
+  "listWorks": {
+    "homePage": "Home Page",
+    "loginScreen": "Login screen",
+    "blog": "Blog",
+    "pageNotFount": "404 error page, for when the client accesses a page that doesn't exist",
+    "publishedAt": "Published at",
+    "notAvaliable": "Not publicly available, or taken offline.",
+    "booking": {
+      "description": "Internal management system for a hotel chain, which includes the management of reservations, the management of apartments, guests, products, payments and tariffs. The frontend was developed with VueJS, in a cleaner look, following the customer's specifications. The backend was built with C # and the database used was MySQL.",
+      "apartmentsList": "Apartment listing screen",
+      "apartmentsEdit": "Apartment editing screen",
+      "guestsList": "Guest list screen",
+      "guestsEdit": "Guest edit screen",
+      "bookingList": "Booking list screen",
+      "bookingEdit": "Reservation edit screen",
+      "usersList": "User list screen",
+      "cashierScreen": "Cashier screen",
+      "faresScreen": "Rates screen"
+    },
+    "confispe": {
+      "description": "Site for accounting firm. The website has, in addition to the public area, an admin panel for configuring plan values, and the blog is integrated with the StoryBlok platform. The entire system was developed in javascript, with VueJS on the frontend and NodeJS on the backend. The database used was MySQL.",
+      "changeCounterPage": "\"Change Counter\" page",
+      "openCompanyPage": "\"Open Company\" page",
+      "plansPage": "\"Plans\" page"
+    },
+    "deblogger": {
+      "description": "Personal technology blog, made with WordPress and Elementor, to disseminate content about programming.",
+      "tutorialsPage": "\"Tutorials\" page",
+      "roadMapPage": "\"RoadMap\" page",
+      "blogCategoriesPage": "Blog categories page"
+    },
+    "olimpiaParques": {
+      "description": "Simple site, with only 3 pages, for selling water park tickets. The site has not yet been published. The system was developed entirely with JavaScript, with VueJS on the frontend and NodeJS with Nest on the backend.",
+      "cartPage": "Cart page",
+      "checkoutPage": "Checkout page"
+    },
+    "csaSaoPaulo": {
+      "description": "Informational site for Narcotics Anonymous Brotherhood, powered by WordPress and Elementor to facilitate content management",
+      "mapsPage": "Page with maps of meetings in the city of São Paulo",
+      "cleanTimeCalculatorPage": "Clean time calculator page",
+      "documentsPage": "Page for disclosure of documents and newsletters"
+    }
+  }
+}
