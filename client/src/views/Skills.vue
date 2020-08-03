@@ -74,6 +74,28 @@ import ModalContact from "@/components/ModalContact";
 
 export default {
   name: "Skills",
+  metaInfo() {
+    return {
+      title: "Skills - Mauro Oliveira",
+      meta: [
+        {
+          name: "description",
+          content: this.$t("skills.metaDescription")
+        },
+        {
+          name: "keywords",
+          content: this.$t("keywords")
+        },
+        {
+          property: "og:title",
+          content: "Mauro Oliveira"
+        },
+        { property: "og:site_name", content: "Mauro Oliveira" },
+        { property: "og:type", content: "website" },
+        { name: "robots", content: "index,follow" }
+      ]
+    };
+  },
   components: {
     HeaderPage,
     SectionTextPrimary,

@@ -40,6 +40,7 @@
             <a
               class="button is-large is-primary grow-hover"
               href="https://github.com/mauroviniciussilva"
+              rel="noreferrer"
               target="_blank"
               name="GitHub"
               aria-label="GitHub"
@@ -51,6 +52,7 @@
             <a
               class="button is-large is-primary grow-hover"
               href="https://www.linkedin.com/in/mauroviniciussilva"
+              rel="noreferrer"
               target="_blank"
               name="LinkedIn"
               aria-label="LinkedIn"
@@ -62,6 +64,7 @@
             <a
               class="button is-large is-primary grow-hover"
               href="http://api.whatsapp.com/send?phone=5511993951098"
+              rel="noreferrer"
               target="_blank"
               name="WhatsApp"
               aria-label="WhatsApp"
@@ -111,6 +114,28 @@ import ModalContact from "@/components/ModalContact";
 
 export default {
   name: "Home",
+  metaInfo() {
+    return {
+      title: "Home - Mauro Oliveira",
+      meta: [
+        {
+          name: "description",
+          content: this.$t("homePage.metaDescription")
+        },
+        {
+          name: "keywords",
+          content: this.$t("keywords")
+        },
+        {
+          property: "og:title",
+          content: "Mauro Oliveira"
+        },
+        { property: "og:site_name", content: "Mauro Oliveira" },
+        { property: "og:type", content: "website" },
+        { name: "robots", content: "index,follow" }
+      ]
+    };
+  },
   components: {
     HeaderPage,
     SectionSvgPrimary,

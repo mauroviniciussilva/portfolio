@@ -7,7 +7,9 @@ import router from "./router";
 import Buefy from "buefy";
 import { i18n } from "./i18n";
 import { Trans } from "./plugins/translation";
+import Meta from "vue-meta";
 
+Vue.use(Meta);
 Vue.use(Buefy);
 
 /* Components */

@@ -21,9 +21,13 @@
           >
             <b-icon icon="check-circle"> </b-icon>
             {{ $t("listWorks.publishedAt") }}
-            <a :href="work.link" target="_blank" class="has-text-white">{{
-              work.linkAlias
-            }}</a>
+            <a
+              :href="work.link"
+              rel="noreferrer"
+              target="_blank"
+              class="has-text-white"
+              >{{ work.linkAlias }}</a
+            >
           </p>
           <p
             v-else
@@ -56,6 +60,7 @@
           :title="$t('work.goToGitHub')"
           style="margin-top: 15px"
           href="https://github.com/mauroviniciussilva"
+          rel="noreferrer"
           target="_blank"
         >
           <b-icon
@@ -76,6 +81,29 @@ import HeaderPage from "@/components/HeaderPage";
 import { works } from "@/json/works.json";
 
 export default {
+  name: "Works",
+  metaInfo() {
+    return {
+      title: "Works - Mauro Oliveira",
+      meta: [
+        {
+          name: "description",
+          content: this.$t("works.metaDescription")
+        },
+        {
+          name: "keywords",
+          content: this.$t("keywords")
+        },
+        {
+          property: "og:title",
+          content: "Mauro Oliveira"
+        },
+        { property: "og:site_name", content: "Mauro Oliveira" },
+        { property: "og:type", content: "website" },
+        { name: "robots", content: "index,follow" }
+      ]
+    };
+  },
   data() {
     return {
       works: works

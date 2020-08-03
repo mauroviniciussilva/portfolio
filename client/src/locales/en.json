@@ -1,10 +1,12 @@
 {
+  "keywords": "website builder, web developer, web designer, webdesign, ecommerce website, website creator, responsive web design, web development company, best website design, web design software, web page design, build a website, design website, how to design a website, web design inspiration, website layout, web application development",
   "navBar": {
     "home": "Home",
     "skills": "Skills",
     "works": "Works"
   },
   "homePage": {
+    "metaDescription": "Developer with knowledge in .NET Core and .NET Framework, currently working with back-end and front-end, mainly with JavaScript frameworks such as Angular and VueJS.",
     "hello": "Hello!",
     "whoAmI": "My name is Mauro, I'm a developer with knowledge in .NET Core and .NET Framework, currently working with back-end and front-end, mainly with JavaScript frameworks such as Angular and VueJS.",
     "responsiveness": "Responsiveness",
@@ -33,6 +35,7 @@
     "send": "Send"
   },
   "skills": {
+    "metaDescription": "A summary of my skills and what stack I usually use when building sites and systems.",
     "stack": "Stack",
     "stackDescription": "Finding the right technologies for a project can be complicated. Should I make the site in HTML, CSS and JavaScript pure? Use some Javascript framework? Use Wordpress? What language will I use for the backend? PHP? Node? .NET? And in the database? Well, to choose the right technologies a number of factors have to be assessed. But if you don't have any preference, I can make the choice for you, and explain why.",
     "testingAndDocumentation": "Testing and Documentation",
@@ -40,6 +43,7 @@
     "questions": "Questions"
   },
   "work": {
+    "metaDescription": "Some of the work I have done in my developer career.",
     "paused": "Paused",
     "otherWorks": "Other Works",
     "otherWorksDescription": "Some works I can't post here, for privacy reasons of the contracting company, or other reasons. There are still works that I did that don't have a graphical interface, such as APIs and automated tests. If you're interested in seeing my code, including the code for this portfolio, access my profile on GitHub, there you'll find some of my projects publicly.",

@@ -1,10 +1,12 @@
 {
+  "keywords": "desenvolvedor web, web designer, design web, site, criador de sites, design responsivo, empresa de desenvolvimento web, melhor design de site, software de web design, design de página da web, criar um site, site de design, como criar um site , inspiração para web design, layout de site, desenvolvimento de aplicativos para web",
   "navBar": {
     "home": "Página Inicial",
     "skills": "Habilidades",
     "works": "Trabalhos"
   },
   "homePage": {
+    "metaDescription": "Desenvolvedor com conhecimento em .NET Core e .NET Framework, trabalhando atualmente com back-end e front-end, principalmente com frameworks JavaScript como Angular e Vue.js.",
     "hello": "Olá!",
     "whoAmI": "Meu nome é Mauro, sou desenvolvedor web, com conhecimento em .NET Core e .NET Framework, atualmente trabalhando com back-end e front-end, principalmente com frameworks JavaScript, como Angular e VueJS.",
     "responsiveness": "Responsividade",
@@ -33,6 +35,7 @@
     "send": "Enviar"
   },
   "skills": {
+    "metaDescription": "Um resumo das minhas habilidades e qual stack costumo usar na construção dos sites e sistemas.",
     "stack": "Stack",
     "stackDescription": "Encontrar as tecnologias certas para um projeto pode ser complicado. Fazer o site em HTML, CSS e JavaScript puro? Usar algum framework Javascript? Usar Wordpress? Qual linguagem de programação vou usar para o back-end? PHP? Node? .NET? E no banco de dados? Bem, para escolher as tecnologias certas, vários fatores precisam ser avaliados. Mas se você não tem nenhuma preferência, eu posso fazer a escolha e te explicar o porquê dela.",
     "testingAndDocumentation": "Testes e documentação",
@@ -40,6 +43,7 @@
     "questions": "Dúvidas"
   },
   "work": {
+    "metaDescription": "Alguns dos trabalhos que já realizei na minha carreira de desenvolvedor.",
     "paused": "Pausado",
     "otherWorks": "Outros Trabalhos",
     "otherWorksDescription": "Alguns trabalhos não posso postar aqui, por questões de privacidade da empresa contratante, ou outros motivos. Ainda há os trabalhos que realizei que não possuem interface gráfica, como APIs e testes automatizados. Caso tenha interesse em ver o meu código, inclusive o código deste portifólio, acesse meu perfil no GitHub, lá você encontrará alguns dos meus projetos de forma pública.",
