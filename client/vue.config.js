@@ -26,7 +26,7 @@ module.exports = {
       plugins: [
         new PrerenderSpaPlugin(
           path.resolve(__dirname, '../server/public'),
-          ['/', '/skills', '/works'],
+          ['/en', '/pt', '/en/skills', '/en/works', '/pt/skills', '/pt/works'],
         ),
       ]
     }

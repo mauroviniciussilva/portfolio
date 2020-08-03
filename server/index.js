@@ -21,10 +21,13 @@ if (process.env.NODE_ENV === 'production') {
     app.use(serveStatic(__dirname + '/public'));
     app.use('/robots.txt', serveStatic(__dirname + '/public/robots.txt'));
 
-    app.get('/en/skills', (req, res) => res.sendFile(__dirname + '/public/skills/index.html'));
-    app.get('/en/works', (req, res) => res.sendFile(__dirname + '/public/works/index.html'));
-    app.get('/pt/skills', (req, res) => res.sendFile(__dirname + '/public/skills/index.html'));
-    app.get('/pt/works', (req, res) => res.sendFile(__dirname + '/public/works/index.html'));
+    app.get('/', (req, res) => res.sendFile(__dirname + '/public/en/index.html'));
+    app.get('/en', (req, res) => res.sendFile(__dirname + '/public/en/index.html'));
+    app.get('/pt', (req, res) => res.sendFile(__dirname + '/public/pt/index.html'));
+    app.get('/en/skills', (req, res) => res.sendFile(__dirname + '/public/en/skills/index.html'));
+    app.get('/en/works', (req, res) => res.sendFile(__dirname + '/public/en/works/index.html'));
+    app.get('/pt/skills', (req, res) => res.sendFile(__dirname + '/public/pt/skills/index.html'));
+    app.get('/pt/works', (req, res) => res.sendFile(__dirname + '/public/pt/works/index.html'));
     app.get(/.*/, (req, res) => res.sendFile(__dirname + '/public/index.html'));
 
     const port = process.env.PORT || 80;
