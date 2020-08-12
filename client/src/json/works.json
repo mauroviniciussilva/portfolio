@@ -74,6 +74,28 @@
         ]
     },
     {
+        "name": "Proffy",
+        "description": "listWorks.proffy.description",
+        "list": [
+            {
+            "url": "/img/proffy/web-landing.png",
+            "title": "proffy.landing"
+            },
+            {
+            "url": "/img/proffy/list-classes.png",
+            "title": "listWorks.proffy.listClasses"
+            },
+            {
+            "url": "/img/proffy/give-classes-1.png",
+            "title": "listWorks.proffy.giveClasses"
+            },
+            {
+            "url": "/img/proffy/give-classes-2.png",
+            "title": "listWorks.proffy.giveClasses"
+            }
+        ]
+    },
+    {
         "name": "Deblogger",
         "description": "listWorks.deblogger.description",
         "link": "http://deblogger.com.br/",

@@ -74,6 +74,12 @@
       "openCompanyPage": "\"Open Company\" page",
       "plansPage": "\"Plans\" page"
     },
+    "proffy": {
+      "description": "Project made to connect teachers to students, inspired by Next Level Week #2 @Rocketseat.The project is made with React, NodeJS, TypeScript and React Native",
+      "landing": "Landing Page",
+      "listClasses": "List classes page",
+      "giveClasses": "Give classes page"
+    },
     "deblogger": {
       "description": "Personal technology blog, made with WordPress and Elementor, to disseminate content about programming.",
       "tutorialsPage": "\"Tutorials\" page",

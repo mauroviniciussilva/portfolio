@@ -28,7 +28,7 @@
             <Skill :percentage="85" name="MySQL" />
             <Skill :percentage="85" name="SQL" />
             <Skill :percentage="80" name="Angular" />
-            <Skill :percentage="60" name="React" />
+            <Skill :percentage="70" name="React" />
           </div>
         </div>
       </div>
